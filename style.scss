@@ -1,0 +1,244 @@
+.section {
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &-title {
+        margin-bottom: 40px;
+
+        &__slogan {
+
+            margin: 0 auto;
+            font-family: Raleway,sans-serif;
+            color: #898f8f;
+            font-size: 1.125em;
+            font-weight: 500;
+            line-height: 1.333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        &__title {
+            margin: 0 auto;
+            font-family: Roboto,sans-serif;
+            color: #ffcc00;
+            font-size: 3.75em;
+            /* Приближение из-за подстановки шрифтов */
+            font-weight: 900;
+            line-height: 1.1;
+            /* Приближение из-за подстановки шрифтов */
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.devider {
+    flex-direction: row;
+    justify-content: center;
+
+    &--vertical {
+    	top:0;
+    	height:100%;
+    	content:"";
+    	background:#ffcc00;
+    	width:1.5px;
+       
+        margin:0 82px;
+    }
+
+    &-line {
+        display: block;
+        content: "";
+        height: 1px;
+        background: #ffcc00;
+        width: 12%;
+        top: 0;
+        &--info{
+        	width:100px;
+            margin:30px;
+        }
+    }
+    &-img {
+        padding: 0 5px;
+        width: 16px;
+        height: 19px;
+        background: url(../img/devider_img.jpg) 50% no-repeat;
+
+        transform: translateY(-50%);
+    }
+}
+
+.scroll{
+    &-left,
+    &-right {
+         width:15px;
+        a {
+            font-family: FontAwesome,sans-serif;
+            color: #ffcc00;
+            font-size: 2.5em;
+            font-weight: 400;
+            line-height: 0.6;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+    }
+    &-left {
+     
+        margin-right:40px;
+    }
+    &-right {
+       
+       
+    }
+}
+ 
+.section-main__member {
+	    width: 418px;
+        height: 418px;
+        position: relative;
+       
+        /*background: url(../img/person.jpg) 50% no-repeat;
+        border:1px solid yellow;*/
+    &-img {
+        
+    	width: 388px;
+        height: 388px;
+        margin:auto auto;
+        transform:translateY(14px);
+    	background: url(../img/person.jpg) 50% no-repeat;
+    	border:1px solid #ffcc00; 
+          }
+    &-top-border,
+    &-bottom-border {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 30%;
+        left: 0;
+    }
+    &-top-border {
+        top: 0;
+    }
+    &-bottom-border {
+        bottom: 0;
+    }
+    &-top-border:after,
+    &-top-border:before,
+    &-bottom-border:after,
+    &-bottom-border:before {
+        content: '';
+        width: 30%;
+        height: 100%;
+    }
+    &-top-border:after,
+    &-top-border:before {
+        border-top: 1px solid #ffcc00;
+    }
+    &-bottom-border:after,
+    &-bottom-border:before {
+        border-bottom: 1px solid #ffcc00;
+    }
+    &-top-border:before,
+    &-bottom-border:before {
+        border-left: 1px solid #ffcc00;
+    }
+    &-top-border:after,
+    &-bottom-border:after {
+        border-right: 1px solid #ffcc00;
+    }
+}
+
+.conteiner {
+    width:1918px;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+    justify-content:center;
+}
+.member-info {
+    width:422px;
+    height:420px;
+    margin-right:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+	&__name {
+		font-family: Roboto,sans-serif;
+        color:  #666666;
+        font-size: 2.25em;
+        font-weight: 900;
+        line-height: 0.7;
+        text-align: center;
+      
+	}
+	&__position {
+		font-family: Raleway,sans-serif;
+        color:  #666666;
+        font-size: 1.5em;
+        font-weight: 400;
+        line-height: 1;
+        text-align: center;
+        margin-bottom:20px;
+	}
+	&__social {
+
+		a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+	}
+	&__description {
+		font-family: Raleway,sans-serif;
+        color:  #333333;
+        font-size: 0.875em;
+        font-weight: 500;
+        line-height: 1.714;
+        text-align: center;
+        padding:0;
+	}
+	&__button {
+		 font-family: OpenSans,sans-serif;
+        color:  #666666;
+        font-size: 0.875em;
+        font-weight: 700;
+        background-color:white;
+        line-height: 1.714;border-width: 1px;
+        border-color:  #ffcc00;
+        border-style: solid;
+        text-transform:uppercase;
+       
+	}
+}
+.info-devider {
+	width:50px;
+	display:flex;
+	flex-direction:row;
+    margin-bottom:25px;
+	&-rectangle-group {
+		width:50%;
+		display:flex;
+		justify-content:space-between;
+		
+	       &__rectangle {
+             content: "";
+             height: 4px;
+             background: #ffcc00;
+             width: 10px;  
+	       }
+     }
+}

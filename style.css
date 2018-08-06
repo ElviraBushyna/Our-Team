@@ -1,0 +1,227 @@
+@charset "UTF-8";
+.section {
+  width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .section-title {
+    margin-bottom: 40px; }
+    .section-title__slogan {
+      margin: 0 auto;
+      font-family: Raleway,sans-serif;
+      color: #898f8f;
+      font-size: 1.125em;
+      font-weight: 500;
+      line-height: 1.333;
+      text-align: center;
+      margin-bottom: 10px; }
+    .section-title__title {
+      margin: 0 auto;
+      font-family: Roboto,sans-serif;
+      color: #ffcc00;
+      font-size: 3.75em;
+      /* Приближение из-за подстановки шрифтов */
+      font-weight: 900;
+      line-height: 1.1;
+      /* Приближение из-за подстановки шрифтов */
+      text-align: center;
+      text-transform: uppercase; }
+
+.devider {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .devider--vertical {
+    top: 0;
+    height: 100%;
+    content: "";
+    background: #ffcc00;
+    width: 1.5px;
+    margin: 0 82px; }
+  .devider-line {
+    display: block;
+    content: "";
+    height: 1px;
+    background: #ffcc00;
+    width: 12%;
+    top: 0; }
+    .devider-line--info {
+      width: 100px;
+      margin: 30px; }
+  .devider-img {
+    padding: 0 5px;
+    width: 16px;
+    height: 19px;
+    background: url(../img/devider_img.jpg) 50% no-repeat;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.scroll-left, .scroll-right {
+  width: 15px; }
+  .scroll-left a, .scroll-right a {
+    font-family: FontAwesome,sans-serif;
+    color: #ffcc00;
+    font-size: 2.5em;
+    font-weight: 400;
+    line-height: 0.6; }
+  .scroll-left a:link, .scroll-right a:link {
+    text-decoration: none; }
+  .scroll-left a:visited, .scroll-right a:visited {
+    text-decoration: none; }
+  .scroll-left a:active, .scroll-right a:active {
+    text-decoration: none; }
+
+.scroll-left {
+  margin-right: 40px; }
+
+.section-main__member {
+  width: 418px;
+  height: 418px;
+  position: relative;
+  /*background: url(../img/person.jpg) 50% no-repeat;
+        border:1px solid yellow;*/ }
+  .section-main__member-img {
+    width: 388px;
+    height: 388px;
+    margin: auto auto;
+    -webkit-transform: translateY(14px);
+    -ms-transform: translateY(14px);
+    transform: translateY(14px);
+    background: url(../img/person.jpg) 50% no-repeat;
+    border: 1px solid #ffcc00; }
+  .section-main__member-top-border, .section-main__member-bottom-border {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+    left: 0; }
+  .section-main__member-top-border {
+    top: 0; }
+  .section-main__member-bottom-border {
+    bottom: 0; }
+  .section-main__member-top-border:after, .section-main__member-top-border:before, .section-main__member-bottom-border:after, .section-main__member-bottom-border:before {
+    content: '';
+    width: 30%;
+    height: 100%; }
+  .section-main__member-top-border:after, .section-main__member-top-border:before {
+    border-top: 1px solid #ffcc00; }
+  .section-main__member-bottom-border:after, .section-main__member-bottom-border:before {
+    border-bottom: 1px solid #ffcc00; }
+  .section-main__member-top-border:before, .section-main__member-bottom-border:before {
+    border-left: 1px solid #ffcc00; }
+  .section-main__member-top-border:after, .section-main__member-bottom-border:after {
+    border-right: 1px solid #ffcc00; }
+
+.conteiner {
+  width: 1918px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.member-info {
+  width: 422px;
+  height: 420px;
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .member-info__name {
+    font-family: Roboto,sans-serif;
+    color: #666666;
+    font-size: 2.25em;
+    font-weight: 900;
+    line-height: 0.7;
+    text-align: center; }
+  .member-info__position {
+    font-family: Raleway,sans-serif;
+    color: #666666;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 20px; }
+  .member-info__social a:link {
+    text-decoration: none; }
+  .member-info__social a:visited {
+    text-decoration: none; }
+  .member-info__social a:active {
+    text-decoration: none; }
+  .member-info__description {
+    font-family: Raleway,sans-serif;
+    color: #333333;
+    font-size: 0.875em;
+    font-weight: 500;
+    line-height: 1.714;
+    text-align: center;
+    padding: 0; }
+  .member-info__button {
+    font-family: OpenSans,sans-serif;
+    color: #666666;
+    font-size: 0.875em;
+    font-weight: 700;
+    background-color: white;
+    line-height: 1.714;
+    border-width: 1px;
+    border-color: #ffcc00;
+    border-style: solid;
+    text-transform: uppercase; }
+
+.info-devider {
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 25px; }
+  .info-devider-rectangle-group {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .info-devider-rectangle-group__rectangle {
+      content: "";
+      height: 4px;
+      background: #ffcc00;
+      width: 10px; }
